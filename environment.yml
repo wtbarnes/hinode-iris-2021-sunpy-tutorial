@@ -1,0 +1,11 @@
+name: sunpy-hinode-iris-21
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - sunpy>=3.0
+  - sunpy-soar
+  - reproject
+  - pip:
+    - pfsspy[performance]
+    - git+git://github.com/USNavalResearchLaboratory/eispac.git
