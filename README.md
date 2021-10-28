@@ -1,5 +1,7 @@
 # SunPy Tutorial at the Hinode-14/IRIS-11 Meeting
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/wtbarnes/hinode-iris-2021-sunpy-tutorial/HEAD)
+
 Notebooks for the SunPy tutorial at the Hinode-14/IRIS-11 Meeting
 
 ## Outline
