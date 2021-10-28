@@ -1,36 +1,14 @@
 # SunPy Tutorial at the Hinode-14/IRIS-11 Meeting
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/wtbarnes/hinode-iris-2021-sunpy-tutorial/HEAD)
+This repo contains the notebook and needed data for the SunPy tutorial presented at the [*Hinode* 14/IRIS 11 Joint Science Meeting]() on 29 October 2021.
 
-Notebooks for the SunPy tutorial at the Hinode-14/IRIS-11 Meeting
+* To run this tutorial notebook in the cloud (recommended, no installation needed!), simply click this badge - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/wtbarnes/hinode-iris-2021-sunpy-tutorial/HEAD).
+* If you want to run this notebook locally, clone the repo and install the requirements in `requirements.txt`.
 
-## Outline
+This tutorial will demonstrate how the `sunpy` core package, along with several affiliated packages as well as the `eispac` software, can be used to analyze an active region as observed by multiple observatories from drastically different viewpoints. This tutorial will emphasize the three core areas of functionality that `sunpy` provides:
 
-* Emphasize three areas of core functionality of sunpy:
-  - Download
-  - Data structures
-  - Coordinates
-* Choose a particular (recent) AR that was observed by EIS
-  - Is there a recent IHOP that we could use to have synergy with the IRIS tutorial?
-  - Ideally this observation would be used in the `eispac` tutorial 
-* Pull in the EIS observations, demonstrate capabilities of Map
-* Use date from the EIS map to construct query for the following data
-  - AIA
-  - HMI
-  - STEREO-A EUVI
-  - SolO EUI
-  - GOES (If this AR coincided with a flare?)
-* Emphasize how to construct complex, multi-instrument queries
-* Highlight use of `sunpy-soar` package to query EUI observations and note that it is a client instantiated outside of `sunpy`
-* Show configuration of all of the observatories
-* Crop all images to the EIS FOV
-* Emphasize that all images are contained in the same data structure
-* Do field extrapolation
-  - Reproject HMI image into synoptic map
-  - Perform field extrapolation
-  - Trace field lines
-* Emphasize benefits of `SkyCoord`
-* Show reprojection of HMI fieldlines onto AIA, EIS, EUVI, and EUI
-  - This again emphasizes ease of use of EIS data in `Map` format
-  - Also emphasizes use of multiple instruments
-* (Optionally: plot GOES time series)
+* Data search and download
+* Data containers for commonly used data products
+* Coordinate transformations and reprojections between solar coordinate systems
+
+Additionally, this tutorial will emphasize how other packages can both utilize and augment the capabilities provided by the `sunpy` core package. In particular, we emphasize the use of level 3 EIS observations in conjunction with other observatories, especially the Extreme Ultraviolet Imager (EUI) on *Solar Orbiter*.
