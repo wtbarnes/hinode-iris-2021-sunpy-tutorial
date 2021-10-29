@@ -1,5 +1,5 @@
 sunpy[all]==3.1.0rc1
-aiapy
 pfsspy[performance]
+ipywidgets
 git+git://github.com/wtbarnes/sunpy-soar.git@filter-near-time
 git+git://github.com/USNavalResearchLaboratory/eispac.git@main
